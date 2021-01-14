@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="595.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Realizar_VendaController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #0D0D0D;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button layoutX="221.0" layoutY="536.0" mnemonicParsing="false" onMouseClicked="#pesquisarCliente" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: #F2E205;" styleClass="Btn_Menu" text="Pesquisar">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txt_cpf" layoutX="22.0" layoutY="536.0" onMouseClicked="#limparInputC" prefHeight="33.0" prefWidth="199.0" text="Insira o CPF do Cliente" />
+            <Label layoutX="22.0" layoutY="519.0" text="Pesquisar Cliente" textFill="WHITE" />
+            <Label layoutX="244.0" layoutY="14.0" text="Realizar Venda" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="221.0" layoutY="476.0" mnemonicParsing="false" onMouseClicked="#pesquisarProduto" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: #F2E205;" styleClass="Btn_Menu" text="Pesquisar">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txt_codigoP" layoutX="22.0" layoutY="476.0" onMouseClicked="#limparInputP" prefHeight="33.0" prefWidth="199.0" text="Insira o Código do Produto" />
+            <Label layoutX="126.0" layoutY="265.0" text="Informações do Produto" textFill="WHITE" />
+            <ListView fx:id="List_carrinhoCompras" layoutX="392.0" layoutY="80.0" prefHeight="353.0" prefWidth="214.0" />
+            <Button layoutX="416.0" layoutY="536.0" mnemonicParsing="false" onMouseClicked="#finalizarCompra" prefHeight="33.0" prefWidth="167.0" style="-fx-background-color: #F2E205;" styleClass="Btn_Menu" text="Finalizar Venda">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="442.0" layoutY="63.0" text="Carrinho de Compras" textFill="WHITE" />
+            <AnchorPane layoutX="13.0" layoutY="283.0" prefHeight="170.0" prefWidth="354.0" style="-fx-border-color: #F2E205;">
+               <children>
+                  <Button layoutX="101.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#addProduto" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #F2E205;" styleClass="Btn_Menu" text="Adicionar Produto">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text fx:id="text_nomeP" fill="WHITE" layoutX="27.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
+                  <Text fx:id="text_preco" fill="WHITE" layoutX="27.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço: " />
+                  <Text fx:id="text_codigo" fill="WHITE" layoutX="27.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código: " />
+                  <Text fx:id="text_estoque" fill="WHITE" layoutX="27.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque: " />
+                  <Text fx:id="text_categoria" fill="WHITE" layoutX="27.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria: " />
+               </children>
+            </AnchorPane>
+            <Label layoutX="22.0" layoutY="459.0" text="Pesquisar Produto" textFill="WHITE" />
+            <Label layoutX="129.0" layoutY="63.0" text="Informações do Cliente" textFill="WHITE" />
+            <AnchorPane layoutX="13.0" layoutY="80.0" prefHeight="170.0" prefWidth="354.0" style="-fx-border-color: #F2E205;">
+               <children>
+                  <Text fx:id="text_nomeC" fill="WHITE" layoutX="23.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
+                  <Text fx:id="text_CPF" fill="WHITE" layoutX="21.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+                  <Text fx:id="text_telContato" fill="WHITE" layoutX="22.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel. Contato:" />
+                  <Text fx:id="text_email" fill="WHITE" layoutX="24.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
+                  <Text fx:id="text_dataNascimento" fill="WHITE" layoutX="24.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento: " />
+                  <Button layoutX="116.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#definirCliente" prefHeight="24.0" prefWidth="123.0" style="-fx-background-color: #F2E205;" styleClass="Btn_Menu" text="Definir Cliente">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="393.0" layoutY="433.0" mnemonicParsing="false" onMouseClicked="#removerProduto" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: darkred;" styleClass="Btn_Menu" text="Remover do Carrinho" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txt_totalPagar" editable="false" layoutX="417.0" layoutY="488.0" prefHeight="25.0" prefWidth="167.0" style="-fx-border-color: #F2E205; -fx-border-radius: 5; -fx-background-color: gray; -fx-background-radius: 5;" text="Total: ">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

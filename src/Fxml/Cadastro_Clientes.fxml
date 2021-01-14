@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="701.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Cadastro_ClientesController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="681.0" prefWidth="619.0" style="-fx-background-color: #0D0D0D;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text fx:id="text_titulo" fill="WHITE" layoutX="-1.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Clientes" textAlignment="CENTER" wrappingWidth="619.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="209.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preencha os campos abaixo">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_nome" layoutX="151.0" layoutY="134.0" prefHeight="37.0" prefWidth="315.0" />
+            <Text fill="WHITE" layoutX="151.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_cpf" layoutX="151.0" layoutY="200.0" prefHeight="37.0" prefWidth="148.0" />
+            <TextField fx:id="txt_telContato" layoutX="320.0" layoutY="200.0" prefHeight="37.0" prefWidth="148.0" />
+            <Text fill="WHITE" layoutX="151.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_dataNascimento" layoutX="152.0" layoutY="270.0" prefHeight="37.0" prefWidth="315.0" />
+            <TextField fx:id="txt_email" layoutX="152.0" layoutY="343.0" prefHeight="37.0" prefWidth="315.0" />
+            <Text fill="WHITE" layoutX="152.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_cartao" layoutX="152.0" layoutY="412.0" prefHeight="37.0" prefWidth="315.0" />
+            <Text fill="WHITE" layoutX="152.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartão">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_rua" layoutX="152.0" layoutY="479.0" prefHeight="37.0" prefWidth="315.0" />
+            <Text fill="WHITE" layoutX="152.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_bairro" layoutX="152.0" layoutY="544.0" prefHeight="37.0" prefWidth="229.0" />
+            <Text fill="WHITE" layoutX="152.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_numero" layoutX="402.0" layoutY="544.0" prefHeight="37.0" prefWidth="65.0" />
+            <Text fill="WHITE" layoutX="402.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn_atualizarClientes" layoutX="150.0" layoutY="624.0" mnemonicParsing="false" onMouseClicked="#atualizarCliente" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: #F2E205; -fx-background-radius: 10px;" styleClass="Btn_Menu" text="Atualizar">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_cadastrarClientes" layoutX="150.0" layoutY="624.0" mnemonicParsing="false" onMouseClicked="#cadastrarCliente" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: #F2E205; -fx-background-radius: 10px;" styleClass="Btn_Menu" text="Cadastrar">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="322.0" layoutY="624.0" mnemonicParsing="false" onMouseClicked="#cancelar" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: darkred; -fx-background-radius: 10px;" styleClass="Btn_Menu" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="WHITE" layoutX="320.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel. Contato">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="152.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="587.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#fechar" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: darkred;" text="X" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="551.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#minimizar" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: darkred;" text="-" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

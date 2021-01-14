@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="457.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="385.0" prefWidth="640.0" style="-fx-background-color: #0D0D0D;" styleClass="Background" stylesheets="@../../Lista%208%20-%20BD/login.css" VBox.vgrow="ALWAYS">
+      <children>
+            <Button layoutX="77.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#cadastrar" prefHeight="38.0" prefWidth="209.0" style="-fx-background-color: #F2E205;" styleClass="Button" text="Cadastrar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2e205" height="464.0" layoutX="380.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="261.0" />
+            <Button layoutX="409.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#logar" prefHeight="38.0" prefWidth="209.0" style="-fx-background-color: #0D0D0D;" styleClass="Button" text="Logar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="txt_login" layoutX="409.0" layoutY="140.0" prefHeight="38.0" prefWidth="209.0" styleClass="Input" />
+            <Text fill="#0d0d0d" layoutX="409.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+            <Text fill="#0d0d0d" layoutX="409.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+            <PasswordField fx:id="txt_senha" layoutX="409.0" layoutY="244.0" prefHeight="38.0" prefWidth="209.0" />
+            <CheckBox layoutX="413.0" layoutY="301.0" mnemonicParsing="false" text="Lembrar senha" textFill="#0d0d0d" />
+            <ImageView fitHeight="150.0" fitWidth="333.0" layoutX="32.0" layoutY="123.0" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="77.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para realizar o cadastro no sistema" />
+            <Text fill="WHITE" layoutX="77.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clique no botão abaixo!" />
+            <Text layoutX="445.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Login">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e205" layoutX="100.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Cadastro">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="609.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#Fechar" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: darkred;" text="X" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
